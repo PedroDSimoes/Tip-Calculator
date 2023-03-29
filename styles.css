@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#outer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(232, 236, 239);
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#buttons-div {
+  display: flex;
+}
+
+#calculate {
+  margin-right: 2rem;
+}
+
+#people {
+  display: flex;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+input[type="checkbox"] {
+  margin: 0 auto;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#total {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#currency {
+  display: flex;
+  margin: 2rem auto;
+}
+
+#tip-buttons {
+  display: flex;
+  justify-content:space-evenly
+}
+
+p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+
+  input[type="text"],
+  input[type="number"],
+  select {
+      font-size: 0.8rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+  }
+
+  #currency {
+    width: 7rem;
+  }
+}

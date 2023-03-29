@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <div id="outer">
+        <form>
+            <label for="bill">Amount to be paid:</label>
+            <input type="text" id="bill" name="bill" pattern="[0-9]+([.,][0-9]+)?" required>
+            <label for="tip">Tip Percentage:</label>
+            <input type="number" id="tip" name="tip" required>
+            <div id =buttons-div>
+            <button type="submit" id="calculate">Calculate</button>
+            <button id="clear">Clear</button>
+             </div>
+            <div>
+            <h3>Sharing the bill?</h3>
+            <label for="people">Number of people:</label>
+            <input type="number" id="people" name="people">
+            </div>
+            <label for="roundUp">Round up</label>
+            <input type="checkbox" id="roundUp" name="roundUp">
+        </form>
+        <div id="total"></div>
+        <label for="currency">Currency:</label>
+            <select id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CNH">CNH</option>
+                <option value="NZD">NZD</option>
+                <option value="SEK">SEK</option>
+                <option value="KRW">KRW</option>
+                <option value="INR">INR</option>
+                <option value="MXN">MXN</option>
+                <option value="ZAR">ZAR</option>
+                <option value="BRL">BRL</option>
+                <option value="PLN">PLN</option>
+                <option value="ILS">ILS</option>
+            </select>
+            <div id="tip-buttons">
+                <button id="tip-10">10%</button>
+                <button id="tip-15">15%</button>
+                <button id="tip-20">20%</button>
+            </div>
+            <p>&copy; 2023 Pedro Simoes</p> 
+    </div>         
+        <script src="app.js"></script>
+</body>
+</html>
